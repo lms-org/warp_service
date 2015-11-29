@@ -5,6 +5,7 @@ namespace warp_service {
 
 bool WarpService::init() {
     lms::imaging::WarpContent::instance.fromConfig(&config());
+    lms::imaging::WarpContent::instance.initialized = true;
 
     return true;
 }
