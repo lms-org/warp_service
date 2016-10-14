@@ -9,4 +9,4 @@ set(HEADERS
 
 include_directories(include)
 add_library(warp_service SHARED ${SOURCES} ${HEADERS})
-target_link_libraries(warp_service PRIVATE lmscore imaging_detection)
+target_link_libraries(warp_service PRIVATE lmscore lms_imaging_detection)
